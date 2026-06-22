@@ -361,24 +361,59 @@ nav.scrolled {
 }
 
 .project-card {
+  height: 100%;
+  display: block;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 30px;
   overflow: hidden;
-  transition: 0.35s;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  position: relative;
 }
 
 .project-card:hover {
   transform: translateY(-12px);
+  will-change: transform;
+  border-color: rgba(20, 184, 166, 0.45);
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(20, 184, 166, 0.08);
+}
+
+.project-card::after {
+  content: "→";
+  position: absolute;
+  top: 35px;
+  right: 35px;
+
+  color: var(--primary);
+  font-size: 24px;
+
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.project-card:hover::after {
+  opacity: 1;
+  transform: translateX(4px);
 }
 
 .project-card img {
   height: 240px;
   object-fit: cover;
+  transition: 0.4s;
+}
+
+.project-card:hover img {
+  transform: scale(1.03);
 }
 
 .project-content {
   padding: 35px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 240px);
 }
 
 .project-content h3 {
@@ -386,8 +421,20 @@ nav.scrolled {
 }
 
 .project-content p {
+  flex: 1;
   color: var(--text-secondary);
   line-height: 1.8;
+}
+
+.project-link {
+  margin-top: 28px;
+  color: var(--primary);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.project-card:hover .project-link {
+  transform: translateX(8px);
 }
 
 .tags {
@@ -435,6 +482,79 @@ nav.scrolled {
 
   box-shadow:
     0 0 10px rgba(20, 184, 166, 0.4);
+}
+
+/* ===================== PROJECT DETAIL PAGE ===================== */
+
+.project-detail {
+  padding-top: calc(var(--nav-height) + 80px);
+  padding-bottom: 100px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--primary);
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  transform: translateX(-6px);
+}
+
+.project-detail img {
+  border-radius: 30px;
+  margin-bottom: 40px;
+}
+
+.project-detail h1 {
+  font-size: clamp(40px, 5vw, 60px);
+  margin: 30px 0;
+}
+
+.project-detail p {
+  color: var(--text-secondary);
+  max-width: 900px;
+  line-height: 1.9;
+}
+
+.star-card {
+  margin-top: 60px;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  padding: 45px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.star-item {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+}
+
+.star-item h4 {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.star-item p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.next-project {
+  margin-top: 60px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* ===================== EXPERIENCE ===================== */
@@ -689,6 +809,19 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
+  }
+
+  .project-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .project-buttons a {
+    width: 100%;
+  }
+
+  .next-project {
+    justify-content: center;
   }
 }
 
