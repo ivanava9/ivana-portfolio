@@ -551,10 +551,105 @@ nav.scrolled {
   margin: 0;
 }
 
+.project-summary {
+  margin-bottom: 50px;
+}
+
+.detail-section {
+  margin-top: 90px;
+}
+
+.detail-section h2 {
+  font-size: 34px;
+  margin-bottom: 35px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.overview-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 35px;
+  transition: 0.3s;
+}
+
+.overview-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(20, 184, 166, 0.35);
+}
+
+.overview-card h3 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.achievement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.achievement-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 24px 30px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 60px;
+}
+
+.achievement-item::before {
+  content: "✓";
+
+  position: absolute;
+  left: 25px;
+  top: 24px;
+
+  color: var(--primary);
+  font-weight: 700;
+}
+
 .next-project {
   margin-top: 60px;
   display: flex;
   justify-content: flex-end;
+}
+
+.next-project a {
+  transition: 0.3s;
+}
+
+.next-project a:hover {
+  transform: translateX(6px);
+}
+
+.visual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.visual-card {
+  overflow: hidden;
+  border-radius: 28px;
+  border: 1px solid var(--border);
+}
+
+.visual-card img {
+  width: 100%;
+  display: block;
+}
+
+.visual-caption {
+  padding: 18px 22px;
+  color: var(--text-secondary);
 }
 
 /* ===================== EXPERIENCE ===================== */
@@ -820,6 +915,14 @@ footer {
     width: 100%;
   }
 
+  .hero-buttons {
+    width: 100%;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+  }
+
   .next-project {
     justify-content: center;
   }
@@ -842,6 +945,10 @@ footer {
   .timeline-dot,
   .timeline-item.right .timeline-dot {
     left: 20px;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
   }
 }
 
