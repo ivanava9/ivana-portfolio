@@ -149,7 +149,6 @@ nav.scrolled {
   grid-template-columns: 1.1fr 1fr;
   gap: 80px;
   align-items: center;
-  padding-top: 40px;
 }
 
 .hello {
@@ -219,9 +218,6 @@ nav.scrolled {
   position: relative;
   z-index: 2;
   box-shadow: 0 30px 60px var(--shadow);
-}
-
-.hero-image img {
   user-select: none;
   -webkit-user-drag: none;
   pointer-events: none;
@@ -264,7 +260,7 @@ nav.scrolled {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   gap: 60px;
-  align-items: block;
+  align-items: stretch;
 
   background: var(--surface);
   border: 1px solid var(--border);
@@ -283,7 +279,7 @@ nav.scrolled {
 .featured-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 24px;
   align-self: stretch;
 }
@@ -339,12 +335,6 @@ nav.scrolled {
   align-items: flex-start;
 }
 
-.project-link {
-  color: var(--primary);
-  font-weight: 500;
-  transition: 0.3s;
-}
-
 .featured-project-link {
   display: block;
   color: inherit;
@@ -372,7 +362,8 @@ nav.scrolled {
 
 .project-card {
   height: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 30px;
@@ -384,29 +375,10 @@ nav.scrolled {
 
 .project-card:hover {
   transform: translateY(-12px);
-  will-change: transform;
   border-color: rgba(20, 184, 166, 0.45);
   box-shadow:
     0 20px 45px rgba(0, 0, 0, 0.3),
     0 0 30px rgba(20, 184, 166, 0.08);
-}
-
-.project-card::after {
-  content: "→";
-  position: absolute;
-  top: 35px;
-  right: 35px;
-
-  color: var(--primary);
-  font-size: 24px;
-
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.project-card:hover::after {
-  opacity: 1;
-  transform: translateX(4px);
 }
 
 .project-card img {
@@ -424,26 +396,29 @@ nav.scrolled {
 }
 
 .project-content {
-  padding: 38px;
+  padding: 33px 36px 36px;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  height: calc(100% - 240px);
 }
 
 .project-content h3 {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  line-height: 1.3;
+  min-height: 72px;
 }
 
 .project-content p {
   flex: 1;
   color: var(--text-secondary);
   line-height: 1.8;
+  margin-bottom: 28px
 }
 
 .project-link {
   margin-top: 28px;
   color: var(--primary);
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.3s;
 }
 
@@ -455,7 +430,7 @@ nav.scrolled {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  margin-top: 25px;
+  margin-top: auto;
 }
 
 .tags span {
@@ -940,6 +915,49 @@ footer {
   }
 }
 
+@media (max-width: 1000px) {
+  .featured-project {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .featured-image {
+    height: auto;
+  }
+
+  .featured-content {
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    left: 0;
+    padding-left: 60px;
+    padding-right: 0;
+  }
+
+  .timeline-dot,
+  .timeline-item.right .timeline-dot {
+    left: 20px;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 50px;
@@ -972,15 +990,6 @@ footer {
     gap: 15px;
   }
 
-  .project-buttons {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .project-buttons a {
-    width: 100%;
-  }
-
   .hero-buttons {
     width: 100%;
   }
@@ -994,45 +1003,3 @@ footer {
   }
 }
 
-@media (max-width: 900px) {
-  .timeline::before {
-    left: 20px;
-  }
-
-  .timeline-item,
-  .timeline-item.left,
-  .timeline-item.right {
-    width: 100%;
-    left: 0;
-    padding-left: 60px;
-    padding-right: 0;
-  }
-
-  .timeline-dot,
-  .timeline-item.right .timeline-dot {
-    left: 20px;
-  }
-
-  .overview-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 1000px) {
-  .featured-project {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .featured-image {
-    height: auto;
-  }
-
-  .featured-content {
-    height: auto;
-  }
-}
