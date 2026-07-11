@@ -366,7 +366,7 @@ nav.scrolled {
 /* ===================== PROJECTS ===================== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 35px;
 }
 
@@ -410,7 +410,7 @@ nav.scrolled {
 }
 
 .project-card img {
-  height: 240px;
+  height: 220px;
   object-fit: cover;
   transition: 0.4s;
 }
@@ -420,7 +420,7 @@ nav.scrolled {
 }
 
 .project-content {
-  padding: 35px;
+  padding: 38px;
   display: flex;
   flex-direction: column;
   height: calc(100% - 240px);
@@ -1010,6 +1010,10 @@ footer {
   }
 
   .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 }
