@@ -403,14 +403,16 @@ nav.scrolled {
 }
 
 .project-content h3 {
-  margin-bottom: 18px;
-  line-height: 1.3;
-  min-height: 72px;
+  font-size: 34px;
+  margin: 0 0 18px;
+  line-height: 1.25;
+  height: calc(2 * 1.25em);
 }
 
 .project-content p {
   color: var(--text-secondary);
   line-height: 1.8;
+  margin: 0;
   margin-bottom: 28px
 }
 
