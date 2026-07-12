@@ -406,7 +406,6 @@ nav.scrolled {
   font-size: 34px;
   margin: 0 0 18px;
   line-height: 1.25;
-  height: calc(2 * 1.25em);
 }
 
 .project-content p {
