@@ -475,9 +475,11 @@ nav.scrolled {
   border-radius: 0;
 }
 
-.project-detail h1 {
+.project-title {
   font-size: clamp(34px, 4vw, 48px);
-  margin: 30px 0;
+  line-height: 1.15;
+  margin: 30px 0 40px;
+  max-width: 900px;
 }
 
 .project-detail p {
@@ -520,20 +522,20 @@ nav.scrolled {
   margin-bottom: 50px;
 }
 
-.presentation-link{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    width:fit-content;
-    margin-top:-6px;
-    margin-bottom:10px;
-    color:var(--primary);
-    font-weight:600;
-    transition:.25s ease;
+.presentation-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-top: -6px;
+  margin-bottom: 10px;
+  color: var(--primary);
+  font-weight: 600;
+  transition: .25s ease;
 }
 
-.presentation-link:hover{
-    transform:translateX(6px);
+.presentation-link:hover {
+  transform: translateX(6px);
 }
 
 .project-hero {
@@ -617,11 +619,14 @@ nav.scrolled {
 }
 
 .responsibility-item ul {
+    list-style: none;
   margin: 0;
-  padding-left: 24px;
+  padding: 0;
 }
 
 .responsibility-item li {
+  position: relative;
+  padding-left: 24px;
   color: var(--text-secondary);
   line-height: 1.9;
   margin-bottom: 16px;
@@ -631,8 +636,15 @@ nav.scrolled {
   margin-bottom: 0;
 }
 
-.responsibility-item li::marker {
-  color: var(--primary);
+.responsibility-item li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
 }
 
 .tools-grid {
@@ -659,20 +671,6 @@ nav.scrolled {
   font-size: 14px;
 }
 
-.next-project {
-  margin-top: 60px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.next-project a {
-  transition: 0.3s;
-}
-
-.next-project a:hover {
-  transform: translateX(6px);
-}
-
 /* === PROJECT GALLERY === */
 
 .visual-grid {
@@ -687,6 +685,7 @@ nav.scrolled {
   border-radius: 24px;
   border: 1px solid var(--border);
   cursor: pointer;
+  height:320px;
 }
 
 .visual-card img {
