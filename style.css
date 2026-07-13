@@ -873,7 +873,7 @@ nav.scrolled {
 }
 
 .education-gpa strong {
-  color: var(--primary);
+  color: var(--text);
   font-weight: 700;
 }
 
