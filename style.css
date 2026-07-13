@@ -38,10 +38,6 @@ a {
   color: inherit;
 }
 
-ul {
-  list-style: none;
-}
-
 .container {
   width: 90%;
   max-width: 1280px;
@@ -462,7 +458,7 @@ nav.scrolled {
   transform: translateX(-6px);
 }
 
-.hero-image img {
+.project-hero-image img {
   width: 100%;
   border-radius: 24px;
   border: 1px solid var(--border);
@@ -619,14 +615,11 @@ nav.scrolled {
 }
 
 .responsibility-item ul {
-    list-style: none;
   margin: 0;
-  padding: 0;
+  padding-left: 24px;
 }
 
 .responsibility-item li {
-  position: relative;
-  padding-left: 24px;
   color: var(--text-secondary);
   line-height: 1.9;
   margin-bottom: 16px;
@@ -636,15 +629,8 @@ nav.scrolled {
   margin-bottom: 0;
 }
 
-.responsibility-item li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 14px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--primary);
+.responsibility-item li::marker {
+  color: var(--primary);
 }
 
 .tools-grid {
