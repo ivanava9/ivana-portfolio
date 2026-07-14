@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-    Hospital Performance Dashboard
+    Credit Card Customer Segmentation
   </title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
       <!-- HERO -->
 
       <h1>
-        Hospital Performance Review
+       Credit Card Customer Segmentation
       </h1>
 
       <div class="project-hero">
@@ -42,28 +42,22 @@
         <div class="hero-content">
 
           <p class="project-summary">
-            Built an executive Tableau dashboard to monitor hospital revenue, admissions, and operational performance
-            across branches, helping leadership identify revenue drivers and improve decision-making.
+            Segmented credit card customers using RFM analysis and explored transaction behavior, fraud, and spending patterns to identify growth opportunities and improve customer engagement.
           </p>
 
           <div class="hero-actions">
 
-            <a href="https://drive.google.com/file/d/1gLAg_zmW4WQNEpAlvc5hBet1nJukZswG/view?usp=sharing" target="_blank"
+            <a href="https://drive.google.com/file/d/1Ecnf2REWM7NedbcQ1rr4EmYHC6YYk6Nl/view?usp=sharing" target="_blank"
               class="hero-link">
               View Full Presentation →
-            </a>
-
-            <a href="https://public.tableau.com/views/IvanaKurniawan-RevoHospital/Dashboard2?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-              target="_blank" class="hero-link">
-              View Dashboard →
             </a>
 
           </div>
 
           <div class="hero-tags">
-            <span>Tableau</span>
-            <span>Dashboard Development</span>
-            <span>Healthcare Analytics</span>
+            <span>Python</span>
+            <span>Customer Segmentation</span>
+            <span>RFM Analysis</span>
           </div>
 
         </div>
@@ -91,8 +85,7 @@
             </h3>
 
             <p>
-              Developed an executive dashboard for a multi-branch hospital network to monitor financial and operational
-              performance across branches and departments.
+              Analyzed credit card transaction and customer data to understand spending behavior, identify business opportunities, and segment customers for targeted marketing.
             </p>
 
           </div>
@@ -104,8 +97,7 @@
             </h3>
 
             <p>
-              Enable executives to monitor KPIs, compare branch performance, identify revenue drivers, and explore
-              operational trends through interactive analysis.
+              Understand customer behavior, identify profitable user segments, and recommend strategies to increase credit card usage.
             </p>
 
           </div>
@@ -117,8 +109,7 @@
             </h3>
 
             <p>
-              Integrated six hospital datasets, defined business KPIs, designed interactive visualizations, and
-              translated analytical findings into actionable recommendations.
+              Cleaned and prepared customer and card datasets, explored transaction and fraud patterns, engineered customer features, and applied RFM segmentation to build actionable customer personas.
             </p>
 
           </div>
@@ -130,9 +121,7 @@
             </h3>
 
             <p>
-              Delivered an interactive Tableau dashboard with KPI scorecards, branch maps, revenue trends, referral
-              analysis, department performance, and doctor metrics. The analysis highlighted high-performing branches,
-              revenue concentration, payment patterns, and operational improvement opportunities.
+              Identified eight customer segments with distinct spending and engagement patterns. The analysis highlighted Potential Loyalists and Customers Needing Attention as the best opportunities for increasing transaction frequency and long-term customer value.
             </p>
 
           </div>
@@ -154,19 +143,19 @@
           <div class="responsibility-item">
             <ul>
               <li>
-                Integrated six relational datasets into a single executive reporting dashboard.
+                Cleaned and prepared customer and credit card datasets for analysis.
               </li>
 
               <li>
-                Designed KPI scorecards to monitor revenue, admissions, and operational efficiency.
+                Performed exploratory analysis on transaction activity, fraud, credit limits, and customer financial profiles.
               </li>
 
               <li>
-                Built interactive visualizations for branch, department, and referral source analysis.
+                Built RFM-based customer segmentation to identify customer personas and engagement levels.
               </li>
 
               <li>
-                Identified revenue concentration, payment trends, and operational improvement opportunities.
+                Developed targeted business recommendations to improve retention, spending, and credit card usage.
               </li>
             </ul>
 
@@ -195,8 +184,13 @@
             <div class="tools-grid">
 
               <div class="tool-item">
-                <img src="../assets/icon_tableau.png">
-                <span>Tableau</span>
+                <img src="../assets/icon_python.png">
+                <span>Python</span>
+              </div>
+
+              <div class="tool-item">
+                <img src="../assets/icon_googlecolab.png">
+                <span>Google Colab</span>
               </div>
 
               <div class="tool-item">
@@ -215,14 +209,14 @@
             </h3>
 
             <div class="tags">
-              <span>Data Preparation</span>
-              <span>Relational Data Modeling</span>
-              <span>Descriptive analytics</span>
-              <span>KPI Design</span>
-              <span>Trend Analysis</span>
-              <span>Geospatial Analysis</span>
-              <span>Revenue Analysis</span>
-              <span>Dashboard Development</span>
+              <span>Data Cleaning</span>
+              <span>Feature Engineering</span>
+              <span>Exploratory Data Analysis</span>
+              <span>RFM Analysis</span>
+              <span>Customer Segmentation</span>
+              <span>Behavior Analysis</span>
+              <span>Fraud Analysis</span>
+              <span>Business Recommendations</span>
             </div>
 
           </div>
@@ -246,19 +240,19 @@
             <ul>
 
               <li>
-                Expand successful practices from high-performing branches to lower-performing locations.
+                Prioritize Potential Loyalists with cashback offers and spending challenges.
               </li>
 
               <li>
-                Improve insurance claim processing to reduce outstanding payments.
+                Re-engage Customers Needing Attention through personalized promotions.
               </li>
 
               <li>
-                Strengthen partnerships with referral sources that generate higher revenue.
+                Retain Champions and Loyal Customers with premium rewards and referral programs.
               </li>
 
               <li>
-                Review department capacity to balance admissions and resource utilization.
+                Launch low-cost campaigns to reactivate At Risk and Hibernating customers.
               </li>
 
             </ul>
@@ -283,13 +277,12 @@
 
           <div class="visual-card">
 
-            <img src="../assets/hospital-performance-kpi.png" alt="KPI Scorecards">
+            <img src="../assets/cust-segmentation-data-cleaning.png" alt="Data Cleaning">
 
             <div class="visual-overlay">
-              <h3>KPI Scorecards</h3>
+              <h3>Data Cleaning</h3>
               <p>
-                Designed executive KPI cards to summarize revenue, admissions, operational efficiency, and overall
-                hospital performance.
+                Prepared customer and card data by handling missing values, correcting data types, removing duplicates, and creating analytical features.
               </p>
             </div>
 
@@ -299,13 +292,12 @@
 
           <div class="visual-card">
 
-            <img src="../assets/hospital-performance-branch.png" alt="Branch Performance Analysis">
+            <img src="../assets/cust-segmentation-fraud-impact.png" alt="Fraud Impact">
 
             <div class="visual-overlay">
-              <h3>Branch Performance Analysis</h3>
+              <h3>Fraud Impact Analysis</h3>
               <p>
-                Compared revenue, admissions, and bed capacity across hospital branches to identify regional performance
-                differences.
+                Measured how fraud reduces overall profitability and identified the potential financial impact of improving fraud prevention.
               </p>
             </div>
 
@@ -315,13 +307,12 @@
 
           <div class="visual-card">
 
-            <img src="../assets/hospital-performance-department.png" alt="Department Performance Analysis">
+            <img src="../assets/cust-segmentation-category.png" alt="RFM Customer Segmentation">
 
             <div class="visual-overlay">
-              <h3>Department Performance Analysis</h3>
+              <h3>RFM Customer Segmentation</h3>
               <p>
-                Compared revenue per admission, length of stay, discounts, and total revenue across departments to
-                identify high-performing services and revenue opportunities.
+                Segmented customers into eight groups based on recency, frequency, and spending to understand engagement and customer value.
               </p>
             </div>
 
@@ -331,12 +322,12 @@
 
           <div class="visual-card">
 
-            <img src="../assets/hospital-performance-dashboard.png" alt="Hospital Dashboard">
+            <img src="../assets/cust-segmentation-opportunity.png" alt="Segment-Based Growth Strategy">
 
             <div class="visual-overlay">
-              <h3>Executive Performance Dashboard</h3>
+              <h3>Segment-Based Growth Strategy</h3>
               <p>
-                Combined financial and operational KPIs into a single interactive dashboard for executive monitoring.
+                Matched each customer segment with targeted marketing and retention strategies to increase credit card usage.
               </p>
             </div>
 
