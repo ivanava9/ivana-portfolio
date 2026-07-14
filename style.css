@@ -519,20 +519,29 @@ nav.scrolled {
 }
 
 .hero-actions {
-    display: flex;
-    gap: 28px;
-    flex-wrap: wrap;
-    margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
 }
 
-.hero-link {
-    color: var(--primary);
-    font-weight: 600;
-    transition: .25s ease;
+.hero-actions .hero-link {
+  display: inline-flex;
+  align-items: center;
+
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+
+  transition: color .25s ease,
+    transform .25s ease;
 }
 
-.hero-link:hover {
-    transform: translateX(6px);
+.hero-actions .hero-link:hover {
+  color: #2dd4bf;
+  transform: translateX(6px);
 }
 
 .project-hero {
@@ -672,7 +681,7 @@ nav.scrolled {
   border-radius: 24px;
   border: 1px solid var(--border);
   cursor: pointer;
-  height:320px;
+  height: 320px;
 }
 
 .visual-card img {
