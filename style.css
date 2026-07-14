@@ -865,14 +865,14 @@ nav.scrolled {
 .skills-layout{
     display:flex;
     flex-direction:column;
-    gap:32px;
+    gap:40px;
 }
 
 .skill-card{
     background:var(--surface);
     border:1px solid var(--border);
     border-radius:28px;
-    padding:34px;
+    padding:42px;
 }
 
 .skill-card h3{
@@ -881,9 +881,41 @@ nav.scrolled {
 }
 
 .skill-card h4{
-    margin:24px 0 14px;
+    margin:0px 0 18px;
     font-size:18px;
+    font-weight:600;
     color:var(--text);
+}
+
+.skills-tools-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(80px,1fr));
+    gap:28px;
+}
+
+.skills-tools-grid .tool-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    text-align:center;
+}
+
+.skills-tools-grid .tool-item img{
+    width:52px;
+    height:52px;
+    object-fit:contain;
+}
+
+.skill-divider{
+    border:none;
+    border-top:1px solid var(--border);
+    margin:28px 0;
+}
+
+.skills-tools-grid .tool-item span{
+    font-size:14px;
+    color:var(--text-secondary);
 }
 
 .skill-pills{
