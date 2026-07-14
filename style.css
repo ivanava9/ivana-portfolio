@@ -518,20 +518,21 @@ nav.scrolled {
   margin-bottom: 50px;
 }
 
-.presentation-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  width: fit-content;
-  margin-top: -6px;
-  margin-bottom: 10px;
-  color: var(--primary);
-  font-weight: 600;
-  transition: .25s ease;
+.hero-actions {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
 }
 
-.presentation-link:hover {
-  transform: translateX(6px);
+.hero-link {
+    color: var(--primary);
+    font-weight: 600;
+    transition: .25s ease;
+}
+
+.hero-link:hover {
+    transform: translateX(6px);
 }
 
 .project-hero {
