@@ -573,6 +573,16 @@ nav.scrolled {
   font-weight: 500;
 }
 
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
 .detail-section {
   margin-top: 70px;
 }
@@ -722,6 +732,22 @@ nav.scrolled {
 
 .visual-card:hover .visual-overlay {
   opacity: 1;
+}
+
+/* === PROJECT DISCLAIMER === */
+
+.project-disclaimer {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.project-disclaimer p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  opacity: 0.8;
+  max-width: 850px;
 }
 
 /* ===================== EXPERIENCE ===================== */
