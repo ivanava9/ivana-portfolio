@@ -737,17 +737,21 @@ nav.scrolled {
 /* === PROJECT DISCLAIMER === */
 
 .project-disclaimer {
-  margin-top: 60px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
+  margin-top: 70px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.project-disclaimer h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .project-disclaimer p {
-  font-size: 13px;
+  max-width: 900px;
+  font-size: 14px;
   line-height: 1.7;
   color: var(--text-secondary);
-  opacity: 0.8;
-  max-width: 850px;
 }
 
 /* ===================== EXPERIENCE ===================== */
