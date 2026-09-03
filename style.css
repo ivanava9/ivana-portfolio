@@ -737,8 +737,8 @@ nav.scrolled {
 /* === PROJECT DISCLAIMER === */
 
 .project-disclaimer {
-  margin-top: 70px;
-  padding-top: 30px;
+  margin-top: 36px;
+  padding-top: 28px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -748,10 +748,10 @@ nav.scrolled {
 }
 
 .project-disclaimer p {
-  max-width: 900px;
   font-size: 14px;
   line-height: 1.7;
   color: var(--text-secondary);
+  margin: 0;
 }
 
 /* ===================== EXPERIENCE ===================== */
